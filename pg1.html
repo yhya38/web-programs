@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <style>
+      * {
+        text-align: center;
+      }
+      .data {
+        margin-top: 20px;
+      }
+      h1 {
+        margin: 10px 0;
+      }
+      input {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        padding: 5px;
+      }
+      button {
+        margin: 20px;
+        padding: 5px 10px;
+        font-weight: bold;
+      }
+    </style>
+    <script type="text/javascript">
+      function calculator(id) {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        let result = 0;
+        if (isNaN(num1) || isNaN(num2)) {
+          alert("Enter valid number");
+          clrall();
+        } else if (id === "add") {
+          result = num1 + num2;
+          document.getElementById("result").value = result;
+        } else if (id === "sub") {
+          result = num1 - num2;
+          document.getElementById("result").value = result;
+        } else if (id === "mul") {
+          result = num1 * num2;
+          document.getElementById("result").value = result;
+        } else if (id === "div") {
+          if (num2 === 0) {
+            document.getElementById("result").value = "infinity";
+          } else {
+            result = num1 / num2;
+            document.getElementById("result").value = result;
+          }
+        }
+      }
+      function clrall() {
+        num1.value = "";
+        num2.value = "";
+        document.getElementById("result").value = "";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Simple Calculator</h1>
+    <div class="data">
+      <label>Num1</label>
+      <input type="text" id="num1" placeholder="Enter any number" />
+      <label>Num2</label>
+      <input type="text" id="num2" placeholder="Enter any number" />
+      <label>Result</label>
+      <input type="text" id="result" />
+    </div>
+    <div>
+      <button id="add" onclick="calculator(this.id)">Addition</button>
+      <button id="sub" onclick="calculator(this.id)">Substraction</button>
+      <button id="mul" onclick="calculator(this.id)">Multiplication</button>
+      <button id="div" onclick="calculator(this.id)">Division</button>
+      <button onclick="clrall()">Clear All</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Square && Cubes</title>
+    <style>
+      table,
+      tr,
+      td {
+        border: solid black;
+        width: 33%;
+        text-align: center;
+        border-collapse: collapse;
+        background-color: lightblue;
+      }
+      table {
+        margin: auto;
+      }
+    </style>
+
+    <script type="text/javascript">
+      document.write(
+        "<table><tr> <th colspan='3'> NUMBERS FROM 0 TO 10 WITH THEIR SQUARE ROOTS </th> </tr> "
+      );
+
+      document.write(
+        "<tr><td> Number</td> <td>Square</td> <td>Cube</td> </tr>"
+      );
+
+      for (let n = 0; n <= 10; n++) {
+        document.write(
+          "<tr> <td>" +
+            n +
+            " </td> <td>" +
+            n * n +
+            "</td><td> " +
+            n * n * n +
+            "</td></tr>"
+        );
+      }
+      document.write("</table>");
+    </script>
+  </head>
+  <body></body>
+</html>
