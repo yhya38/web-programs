@@ -1,0 +1,38 @@
+<?xml-stylesheet type='text/css' href="./xml.css" ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1>STUDENTS DESCRIPTION</h1>
+</head>
+
+<students>
+
+<student>
+<USN>USN : 1GC17CS038</USN>
+<name>NAME : YAHIYA KHAN</name>
+<college>COLLEGE : GCE</college>
+<branch>BRANCH : CSE</branch>
+<year>YEAR : 2017</year>
+<e-mail>E-Mail : yahiyakhan2217@gmail.com</e-mail>
+</student>
+
+<student>
+<USN>USN : 1GC17CS034</USN>
+<name>NAME : AAMIR ALAM</name>
+<college>COLLEGE : GCE</college>
+<branch>BRANCH : CSE</branch>
+<year>YEAR : 2017</year>
+<e-mail>E-Mail : sohailamir@gmail.com</e-mail>
+</student>
+
+<student>
+<USN>USN : 1GC17CS047</USN>
+<name>NAME : YUSUF</name>
+<college>COLLEGE : GCE</college>
+<branch>BRANCH : CSE</branch>
+<year>YEAR : 2017</year>
+<e-mail>E-Mail : yahiyakhan2217@gmail.com</e-mail>
+</student>
+
+</students>
+</html>
